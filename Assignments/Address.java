@@ -23,9 +23,17 @@ public class Address
       zipCode = zip;
    }
 
+   /**
+    * 
+    */
 
-
-
+   public Address (Address other)
+   {
+       streetAddress = other.streetAddress; 
+       this.city = other.city; 
+       state = other.state;
+       zipCode = (other.zipCode); 
+   }
 
    //-----------------------------------------------------------------
    //  Returns this Address object as a string.

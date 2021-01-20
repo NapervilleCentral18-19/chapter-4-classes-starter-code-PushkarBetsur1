@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=mathy
+comment1.params=
+comment1.target=mathy()
+comment1.text=\r\n\ \ \ \ \ \ \ \ default\ constructor\ -\ stubed\ in\r\n\ \ \ \ \ \ \ \ will\ ini\ all\ variables\r\n
+comment2.params=value
+comment2.target=double\ abs(double)
+comment3.params=value1\ value2
+comment3.target=int\ add(int,\ int)
+comment3.text=\r\n\ add\ method\ takes\ two\ int\ and\ returns\ the\ sum\ \r\n\ @param\ int\ value,\ int\ value\r\n\ @return\ sum\ of\ value\ \ +\ value\ \r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

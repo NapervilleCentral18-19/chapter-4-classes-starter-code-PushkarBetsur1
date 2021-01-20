@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Coin
+comment1.params=
+comment1.target=Coin()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Coin\r\n
+comment2.params=value
+comment2.target=Coin(int)
+comment2.text=\r\n\ Constructor\ -\ takes\ an\ int\ 0-1\ and\ set\ the\ face\r\n
+comment3.params=
+comment3.target=int\ flip()
+comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment4.params=
+comment4.target=int\ getFace()
+comment4.text=\r\n\ getFace\ -\ will\ return\ the\ face\ as\ an\ in\ \r\n\ @return\ int\ face\ of\ 0\ or\ 1\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ toString\r\n\ returns\ the\ Data\ in\ a\ String\ Format\r\n\ @return\ String\ -\ face\ as\ "Heads""\ or\ "Tails"\r\n
+numComments=6

@@ -12,7 +12,7 @@ public class SnakeEyes
    //-----------------------------------------------------------------
    public static void main (String[] args)
    {
-      final int ROLLS = 500;
+      final int ROLLS = 1000;
       int snakeEyes = 0, num1, num2;
 
       Die die1 = new Die();    // creates a six-sided die
@@ -21,9 +21,10 @@ public class SnakeEyes
 
       for (int roll = 1; roll <= ROLLS; roll++)
       {
-
-         // write correct code to check for snake eyes
-
+         die1.roll();
+         die2.roll();
+         if (die1.getFaceValue()==1  &&   die2.getFaceValue()==1)
+            snakeEyes++;
       }
 
       System.out.println ("Number of rolls: " + ROLLS);

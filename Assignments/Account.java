@@ -1,4 +1,3 @@
-//********************************************************************
 //  Account.java       Author: Lewis/Loftus/Cocking
 //
 //  Represents a bank account with basic services such as deposit
@@ -6,7 +5,7 @@
 //********************************************************************
 
 import java.text.NumberFormat;
-
+import java.util.*;
 
 public class Account
 {
@@ -17,7 +16,7 @@ public class Account
    private int acctNumber;
    private double balance;
    private String name;
-
+   Scanner keyboard = new Scanner(System.in);
    /**
    * Sets up the account by defining its owner, account number,
    *  and initial balance.
@@ -25,10 +24,15 @@ public class Account
    public Account (String owner, int account, double initial)
    {
       name = owner;
+      acctNumber = account; 
+      balance = initial; 
+    }
+    public Account (String owner, int account )
+   {
+      name = owner;
       acctNumber = account;
-      balance = initial;
-   }
-
+      this.balance=balance;
+    }
    /**
    *  Validates the transaction, then deposits the specified amount
    *  into the account. Returns the new balance.
@@ -80,11 +84,17 @@ public class Account
    *  Asks the user for amount to transfer
    *  from one account to another.
    */
-   public void transfer (/*object*/)
+   public void transfer(Account another)
    {
-	   System.out.print("Enter amount to transfer");
-		double trans = 0; //aScannerObject.nextDouble();
-
+       System.out.print("Enter amount to transfer");
+        double tran = keyboard.nextDouble();
+        if ((another.balance - tran) > 0) //ensures that there is actual money to transfer
+        { this.balance += tran;
+        another.balance -= tran;
+      }
+      else {
+          System.out.println("Please transfer a valid amount");
+        }
    }
 
    /**
@@ -92,25 +102,33 @@ public class Account
    */
    public double addInterest ()
    {
-      balance += (balance * RATE);
+      balance = balance + (balance * RATE);
       return balance;
    }
 
    /**
    *  Returns the current balance of the account.
    */
-
+  public double getBalance()
+   {
+       return balance;
+    }
 
    /**
    *  Returns the account number.
    */
-
+  public int getAccountNum()
+   {
+     return acctNumber;  
+    } 
+  
 
    /**
    *  Returns a one-line description of the account as a string.
    */
    public String toString ()
    {
-      return ("supply correct data");
+     return ("Name: " + name + " \t Account Number: " + acctNumber + " \t Balance: " + balance);
+
    }
 }

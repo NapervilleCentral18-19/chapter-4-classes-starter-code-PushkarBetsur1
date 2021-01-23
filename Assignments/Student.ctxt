@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Student
+comment1.params=first\ last\ home\ school
+comment1.target=Student(java.lang.String,\ java.lang.String,\ Address,\ Address)
+comment2.params=other
+comment2.target=Student(Student)
+comment2.text=\r\n\ Copy\ Constructor\ will\ copy\ info\ from\ one\ object\ to\ this\ one\r\n\ @parm\ Student\ object\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

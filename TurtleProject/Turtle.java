@@ -1,5 +1,6 @@
 import java.util.*;
 import java.awt.*;
+//import bookClasses.*;
 
 /**
  * Class that represents a turtle which is similar to a Logo turtle.
@@ -68,5 +69,10 @@ public class Turtle extends SimpleTurtle
     t1.turn(45);
     t1.forward();
   }
+  
+  public void foo()
+  {
+     int z = 2;
+    }
 
 } // this } is the end of class Turtle, put all new methods before this
